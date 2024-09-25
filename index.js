@@ -9,3 +9,12 @@ anchorLinks.forEach((link) => {
     targetElement.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+
+const button = document.getElementById('myButton');
+
+// Add event listener to the button
+button.addEventListener('click', () => {
+  // Perform some action when the button is clicked
+  console.log('Button clicked!');
+});
