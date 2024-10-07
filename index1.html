@@ -1,27 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal CV</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Permanent+Marker&display=swap');
+        </style>
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <ul>
-                <li class="nav-li"><a href="#about">About</a></li>
-                <li class="nav-li"><a href="#experience">Experience</a></li>
-                <li class="nav-li"><a href="#education">Education</a></li>
-                <li class="nav-li"><a href="#skills">Skills</a></li>
-                <li class="nav-li"><a href="#contact">Contact</a></li>
+    <header>
+        
+          <nav class="navbar">
+            <div class="container"> 
+                <img src="images/Profile.jpg" alt="Profile Picture" id="profile-pic">
+            </div>
+            <ul class="menu">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+        
+      </header>
     <main>
+        <section id="portrait">
+            <div id="intro">
+                <h1 id="hportrait"><span>Esteban</span></h1>
+                <h1 style="margin-top: -50px;"><span id="lastnameSpan">V</span>allejo</h1>
+                <p>Download my CV here: </p>
+                <a download href="CVsd2024.pdf"><button id="cvDownload">Download CV</button></a>
+            </div>
+        </section>
         <section id="about">
+            <div>
             <h1 class="">About Me</h1>
-            <p id = "p-About" class = "p-Text">As tough as it is to talk about one self, I also want to show the world my worthiness and value for society by bringing my technology and software skills to knowledge.
+            
+            <p id="p-About" class="p-Text">As tough as it is to talk about one self, I also want to consider myself and be considered for showing the world my worthiness and value for society by bringing my technology and software skills to knowledge.
         I believe that mankind can get to the point in which we all colaborate together and enhance the knowledge we still have not discovered from the vast Universe we live in. Because of those beliefs
         I want to devote my whole life to cooperate, connect, learn and build wonders with people all around the world heading to a better and more evolved humanity.
 
@@ -29,47 +49,54 @@
         with different companies, I've been able to identify the different needs and gaps in software development, weather is for big organizations or startups.
 
         My main focus is to develop hybrid applications that work in several operative systems. With that in mind I have learned and certified my knowledge in Flutter development
-        as well as in JavaScript, HTML&CSS
+        as well as in JavaScript, HTML&amp;CSS
             </p>
-            <img src="profile-pic.jpg" alt="Profile Picture">
+        </div>
+            
+           
+
+
         </section>
-        <section>
-    <a href="index1.html">Inicio</a> | <a href="Estudios.html">Estudios</a>
-   </section>
-   <h2 class="subtitle">Datos personales</h2>
-   <img src="img/profile1.jpg" width="100px" height="100px" alt="profile picture"/>
-    <h3>Esteban Vallejo Escobar</h3>
-    <h3>14/07/1996</h3>
-    <h3>Bogotá D.C</h3>
+        
+   
    <section id="experience">
-    <h2>Experiencia</h2>
-    <video> src="videoproject.mp4" width="200px" height="200px" controls="" poster="" title=""></video>
-    <audio> src="Audioproject.mp3" controls="" title=""></audio>
+    <div>
+        <h2>Experience</h2>
+        <p>Despite having personal projects developed in classes, I have little experience as software developer, and I currently I'm looking to acquire a strong background with the help of a company that has a career plan for me and is willing to let ne learn while performing their desired tasks. </p>
+        <audio> src="Audioproject.mp3" controls="" title=""&gt;</audio>
+    </div>
    </section>
         <section id="education" class="section">
+            <div>
             <h1>Education</h1>
             <ul>
                 <li>
                     <h2>Basics of Front end certificate, MINTIC Talento Tech </h2>
                     <p>2024</p>
+                    <img src="images/certificateFullstack_basico.png">
                 </li>
                 <li>
                     <h2>Flutter development certificate, Next University</h2>
                     <p>2023</p>
+                    <img src="images/FlutterCertificate.png">
                 </li>
                 <li>
                     <h2>Java for Android certificate, Next University</h2>
                     <p>2022</p>
+                    <img src="images/certificateForAndroid.png">
                 </li>
                 
                 <li>
-                    <h2>Highschool degree, Gimnasio Emilio de Brigard</h2>
-                    <p>2013</p>
+                    <h2>Objects oriented programing with Java</h2>
+                    <p>2021</p>
+                    <img src="images/ObjectOrientedProgramingJava.png">
                 </li>
                 
             </ul>
+        </div>
         </section>
         <section id="skills">
+            <div>
             <h1>Skills</h1>
             <ul>
                 <li>JavaScript</li>
@@ -78,17 +105,34 @@
                 <li>Node.js</li>
                 <li>Git</li>
             </ul>
+        </div>
         </section>
         <section id="contact">
+            <div>
+                <h1 class="subtitle">Datos personales</h1>
+   
+                <h3>Esteban Vallejo Escobar</h3>
+                <h3>14/07/1996</h3>
+                <h3>Bogotá D.C</h3>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
             <h1>Contact Me</h1>
             <p>Get in touch with me through:</p>
             <ul>
-                <li><a href="mailto:estebanfullmusic@gmail.com">john.doe@example.com</a></li>
+                <li><a href="mailto:estebanfullmusic@gmail.com">estebanfullmusic@gmail.com</a></li>
                 <li><a href="https://www.linkedin.com/in/johndoe/">LinkedIn</a></li>
                 <li><a href="https://github.com/johndoe">GitHub</a></li>
             </ul>
-        </section>
-    </main>
+         </div>
+    </footer>
     <script src="script.js"></script>
+    <script src="/Node/app.js"></script>
+
+
+
 </body>
 </html>
